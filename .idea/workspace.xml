@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="intiail migration to nextjs">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="Implemented homepage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/landing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,39 +26,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MatteoMartinelliMM&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MatteoMartinelliMM/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;871b0a7d-7344-476e-9ed3-f078088b6181&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2tqlSpN56d9fpWfBi9YENXQskEk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Proofreading missing languages information&quot;: &quot;Proofreading missing languages information&quot;,
-    &quot;Notification.DoNotAsk-Proofreading missing languages information&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nextjs&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Users/Teo/StormProjects/portfolio/src/app/components&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Proofreading missing languages information": "Proofreading missing languages information",
+    "Notification.DoNotAsk-Proofreading missing languages information": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/Users/Teo/StormProjects/portfolio/src/app/components/timeline",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "ts.external.directory.path": "F:\\Program\\WebStorm 2024.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components" />
+      <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\timeline" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\icons" />
+      <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\public" />
       <recent name="F:\Users\Teo\StormProjects\portfolio" />
     </key>
@@ -120,6 +130,8 @@
       <workItem from="1743071904387" duration="10298000" />
       <workItem from="1743242888632" duration="317000" />
       <workItem from="1743243234446" duration="68000" />
+      <workItem from="1743243315930" duration="8098000" />
+      <workItem from="1743352179511" duration="14204000" />
     </task>
     <task id="LOCAL-00001" summary="intiail migration to nextjs">
       <option name="closed" value="true" />
@@ -129,15 +141,52 @@
       <option name="project" value="LOCAL" />
       <updated>1741688665615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="INITIAL COMMIT">
+      <option name="closed" value="true" />
+      <created>1743243503179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743243503179</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented homepage">
+      <option name="closed" value="true" />
+      <created>1743243764946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743243764946</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented homepage">
+      <option name="closed" value="true" />
+      <created>1743243786352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743243786352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intiail migration to nextjs" />
-    <option name="LAST_COMMIT_MESSAGE" value="intiail migration to nextjs" />
+    <MESSAGE value="INITIAL COMMIT" />
+    <MESSAGE value="Implemented homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented homepage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
