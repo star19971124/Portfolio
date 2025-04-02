@@ -1,6 +1,5 @@
 "use client";
 import {useEffect, useCallback, useState} from "react";
-import {hslToHex, hsvToHex} from "@/app/utils";
 import {loadSlim} from "@tsparticles/slim";
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 

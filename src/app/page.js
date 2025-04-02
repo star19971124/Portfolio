@@ -1,6 +1,5 @@
 import Navbar from "@/app/components/navbar";
 import Landing from "@/app/components/landing";
-import ParticlesBackground from "@/app/components/landingBackground";
 import Experience from "@/app/components/experience";
 
 export default function Home() {
