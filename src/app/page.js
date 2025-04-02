@@ -1,6 +1,7 @@
 import Navbar from "@/app/components/navbar";
 import Landing from "@/app/components/landing";
 import Experience from "@/app/components/experience";
+import Knowledge from "@/app/components/knowledge";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">
@@ -15,7 +16,7 @@ export default function Home() {
                      className="min-h-screen w-full scroll-mt-28">
                 <Experience></Experience></section>
             <section id="knowledge" className="min-h-screen flex items-center justify-center  ">
-                <h1>KNOWLEDGE</h1></section>
+                <Knowledge></Knowledge></section>
             <section id="projects"
                      className="min-h-screen flex items-center justify-center">
                 <h1>PROJECTS</h1></section>

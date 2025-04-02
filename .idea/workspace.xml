@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="Implemented homepage">
+    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="DEV: implemented experience section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/experience.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/landingBackground.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/landingBackground.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/timeline/timelineElement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/timeline/timelineIcon.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/Users/Teo/StormProjects/portfolio/src/app/components/timeline",
+    "last_opened_file_path": "C:/Users/matte/WebstormProjects/portfolio/src/app/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -73,13 +75,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\app\components" />
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\model" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\timeline" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\icons" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components" />
-      <recent name="F:\Users\Teo\StormProjects\portfolio\public" />
-      <recent name="F:\Users\Teo\StormProjects\portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\app\components" />
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\app\components\icons" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app" />
     </key>
   </component>
@@ -135,7 +139,7 @@
       <workItem from="1743243234446" duration="68000" />
       <workItem from="1743243315930" duration="8098000" />
       <workItem from="1743352179511" duration="14204000" />
-      <workItem from="1743587949470" duration="11176000" />
+      <workItem from="1743587949470" duration="13578000" />
     </task>
     <task id="LOCAL-00001" summary="intiail migration to nextjs">
       <option name="closed" value="true" />
@@ -169,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743243786352</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DEV: implemented experience section">
+      <option name="closed" value="true" />
+      <created>1743604764416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743604764416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +213,8 @@
     <MESSAGE value="intiail migration to nextjs" />
     <MESSAGE value="INITIAL COMMIT" />
     <MESSAGE value="Implemented homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented homepage" />
+    <MESSAGE value="DEV: implemented experience section" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEV: implemented experience section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

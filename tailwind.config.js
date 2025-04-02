@@ -32,7 +32,16 @@ export default {
             },
         },
     },
-    plugins: [daisyui, typography],
+    plugins: [daisyui, typography, function ({addComponents, theme}) {
+        addComponents({
+            '.progress.animate::-webkit-progress-value': {
+                transition: 'width 1.5s ease-out'
+            },
+            '.progress.animate::-moz-progress-bar': {
+                animation: 'progress-fill 1.5s ease-out forwards'
+            },
+        })
+    }],
     daisyui: {
         themes: [{
             light: {
