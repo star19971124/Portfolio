@@ -24,6 +24,10 @@ const ParticlesBackground = () => {
                 size: {
                     value: {min: 6, max: 30} // Range di dimensioni
                 },
+                collisions: {
+                    enable: true,
+                    mode: "bounce",
+                },
                 rotate: {
                     value: {min: 0, max: 360}, // Rotazione casuale da 0 a 360 gradi
                     direction: "random", // Direzione casuale
@@ -35,10 +39,10 @@ const ParticlesBackground = () => {
                 },
                 move: {
                     enable: true,
-                    speed: 1
+                    speed: 1.5
                 },
                 stroke: {
-                    width: 4, // Spessore del bordo
+                    width: 5, // Spessore del bordo
                     color: "#10b981" // Colore del bordo
                 },
                 color: {
@@ -74,7 +78,7 @@ const ParticlesBackground = () => {
                             },
                             size: {
                                 value: {min: 6, max: 12} // Particelle più piccole
-                            }
+                            },
                         }
                     }
                 },
@@ -103,7 +107,7 @@ const ParticlesBackground = () => {
                     particles: {
                         ...prevState.options.particles,
                         stroke: {
-                            width: 4,
+                            width: 5,
                             color: strokeColor
                         },
                         color: {
