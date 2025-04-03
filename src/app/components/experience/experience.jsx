@@ -1,7 +1,7 @@
 import ExperienceEntry from "@/model/experienceEntry";
-import RevealOnScroll from "@/app/components/revealOnScroll";
-import TimelineIcon from "@/app/components/icons/timelineIcon";
-import TimelineElement from "@/app/components/timelineElement";
+import RevealOnScroll from "@/app/components/clientComponents/revealOnScroll";
+import TimelineIcon from "@/app/components/experience/timelineIcon";
+import TimelineElement from "@/app/components/experience/timelineElement";
 
 const experiences = [
     new ExperienceEntry("Bachelor's Degree in Computer Science @Unimi",

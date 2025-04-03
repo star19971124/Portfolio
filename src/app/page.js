@@ -1,7 +1,7 @@
 import Navbar from "@/app/components/navbar";
 import Landing from "@/app/components/landing";
-import Experience from "@/app/components/experience";
-import Knowledge from "@/app/components/knowledge";
+import Experience from "@/app/components/experience/experience";
+import Knowledge from "@/app/components/knowledge/knowledge";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">

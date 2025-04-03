@@ -38,7 +38,7 @@ export default {
                 transition: 'width 1.5s ease-out'
             },
             '.progress.animate::-moz-progress-bar': {
-                animation: 'progress-fill 1.5s ease-out forwards'
+                transition: 'width 1.5s ease-out'
             },
         })
     }],

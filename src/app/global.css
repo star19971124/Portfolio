@@ -102,3 +102,35 @@ html {
     padding-right: 2rem;
     text-align: center;
 }
+
+.progress-mobile {
+    @apply progress-primary;
+}
+
+.progress-web {
+    @apply progress-accent;
+}
+
+.progress-db {
+    @apply progress-warning;
+}
+
+.progress-media {
+    @apply progress-error;
+}
+
+.divider-mobile {
+    @apply divider-primary;
+}
+
+.divider-web {
+    @apply divider-accent;
+}
+
+.divider-db {
+    @apply divider-warning;
+}
+
+.divider-media {
+    @apply divider-error;
+}
