@@ -2,6 +2,7 @@ import Navbar from "@/app/components/navbar";
 import Landing from "@/app/components/landing";
 import Experience from "@/app/components/experience/experience";
 import Knowledge from "@/app/components/knowledge/knowledge";
+import Projects from "@/app/components/projects/projects";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">
@@ -19,7 +20,7 @@ export default function Home() {
                 <Knowledge></Knowledge></section>
             <section id="projects"
                      className="min-h-screen flex items-center justify-center">
-                <h1>PROJECTS</h1></section>
+                <Projects></Projects></section>
         </div>
         <section id="contact" className="w-screen mt-60">
             <h1>CONTACT</h1></section>
