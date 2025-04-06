@@ -1,5 +1,5 @@
-import ParticlesBackground from "@/app/components/landingBackground";
 import DownloadIcon from "@/app/components/icons/downloadIcon";
+import ParticlesBackground from "@/app/homePage/landingBackground";
 
 
 function Landing() {

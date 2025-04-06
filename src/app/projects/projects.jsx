@@ -1,5 +1,5 @@
 import ProjectEntry from "@/model/projectEntry";
-import ProjectCard from "@/app/components/projects/projectCard";
+import ProjectCard from "@/app/projects/projectCard";
 import MasonryLayout from "@/app/components/clientComponents/masonryLayout";
 
 

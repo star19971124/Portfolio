@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect, useRef} from 'react'
 import {InputValidator} from "@/utils/inputValidator"
-import FormButton from "@/app/components/clientComponents/formButton";
+import FormButton from "@/app/components/formButton";
 
 function ContactForm() {
     const [state, setState] = useState({isLoading: false, isValid: false, msgSent: false})
