@@ -33,12 +33,12 @@ function buildKnowledgeByType(isLanguages= false){
             {
                 knowledgeMap.get(k).map(v =>
                     <div key={`${k.label()}-${v.label}`} className="flex items-center w-full">
-                        <div className={`${isLanguages ? 'w-1/12' :'w-1/4'} flex flex-shrink-0 items-start`}>
+                        <div className={`${isLanguages ? 'w-1/4 lg:w-1/12' :'w-1/4'} flex flex-shrink-0 items-start`}>
                             <FadeComponent>
                                 <span className="text-left font-medium">{`${v.label.toUpperCase()}:`}</span>
                             </FadeComponent>
                         </div>
-                        <div className={`${isLanguages ? 'w-11/12' :'w-3/4'} flex justify-end items-center gap-4 `}>
+                        <div className={`${isLanguages ? 'w-3/4 lg:w-11/12' :'w-3/4'} flex justify-end items-center gap-4 `}>
                             <div className="flex-grow mr-4">
                                 <AnimatedProgress value={v.value}>
                                     <progress className={`progress w-full ${k.progressStyle()} `}
