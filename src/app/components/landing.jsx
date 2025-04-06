@@ -1,4 +1,5 @@
 import ParticlesBackground from "@/app/components/landingBackground";
+import DownloadIcon from "@/app/components/icons/downloadIcon";
 
 
 function Landing() {
@@ -32,8 +33,10 @@ function Landing() {
                 <h1 className="text-center lg:text-left text-3xl lg:text-5xl font-bold w-full">👋 I'm Matteo
                     Martinelli</h1>
                 <p className="text-center px-4 mt-2 md:mt-4 lg:text-left text-base md:text-lg lg:text-2xl">
-                    I'm a passionate Full Stack Developer with experience in both mobile and web, with a strong focus on cybersecurity.
-                    For me, programming is the art of abstracting the world around us into elegant and efficient solutions.</p>
+                    I'm a passionate Full Stack Developer with experience in both mobile and web, with a strong focus on
+                    cybersecurity.
+                    For me, programming is the art of abstracting the world around us into elegant and efficient
+                    solutions.</p>
                 <div className="mt-4 flex justify-center content-evenly items-center gap-4 lg:mt-8">
                     <div>
                         <button className="btn btn-outline btn-primary">Visit</button>
@@ -42,16 +45,7 @@ function Landing() {
                         <p className="text-center lg:text-left text-base lg:text-2xl">or</p>
                     </div>
                     <div>
-                        <button className="btn btn-outline btn-secondary">Get the CV <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="size-6">
-                            <path strokeLinecap="round" strokeLinejoin="round"
-                                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-                        </svg></button>
-
+                        <button className="btn btn-outline btn-secondary">Get the CV <DownloadIcon/></button>
                     </div>
                 </div>
             </div>
