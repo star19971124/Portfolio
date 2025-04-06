@@ -119,6 +119,10 @@ html {
     @apply progress-error;
 }
 
+.progress-languages {
+    @apply progress-success;
+}
+
 .divider-mobile {
     @apply divider-primary;
 }
@@ -133,6 +137,10 @@ html {
 
 .divider-media {
     @apply divider-error;
+}
+
+.divider-languages {
+    @apply divider-success
 }
 
 .clickable-card{

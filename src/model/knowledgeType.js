@@ -7,6 +7,7 @@ class KnowledgeType {
     static WEB = new KnowledgeType('web');
     static DB_BACKEND = new KnowledgeType('db & backend');
     static MD_PROCESS = new KnowledgeType('media proc.');
+    static LANGUAGE = new KnowledgeType('language');
 
 
     dividerStyle() {
@@ -20,10 +21,12 @@ class KnowledgeType {
                 return 'divider-db'
             case 'media proc.':
                 return 'divider-media'
+            case 'language':
+                return 'divider-languages'
         }
     }
 
-    progressStyle(){
+    progressStyle() {
         switch (this.type) {
             case 'mobile':
                 return 'progress-mobile';
@@ -33,6 +36,8 @@ class KnowledgeType {
                 return 'progress-db';
             case 'media proc.':
                 return 'progress-media';
+            case 'language':
+                return 'progress-languages';
         }
     }
 
@@ -41,7 +46,7 @@ class KnowledgeType {
     }
 
     static values() {
-        return [this.MOBILE, this.WEB, this.DB_BACKEND, this.MD_PROCESS];
+        return [this.MOBILE, this.WEB, this.DB_BACKEND, this.MD_PROCESS, this.LANGUAGE];
     }
 }
 
