@@ -26,7 +26,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <h6 className="footer-title mt-12 text-center">© Tvoosai. All rights reserved</h6>
+            <h6 className="footer-title mt-8 text-center">© Tvoosai. All rights reserved</h6>
         </div>
     </footer>
 

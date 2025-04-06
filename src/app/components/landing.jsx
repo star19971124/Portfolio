@@ -29,7 +29,7 @@ function Landing() {
                 </svg>
             </div>
             <div
-                className="lg:h-full basis-2/3 items-center justify-center bg-base-100 ">
+                className="lg:h-full basis-2/3 items-center justify-center bg-base-100 py-4 px-0.5 rounded-md">
                 <h1 className="text-center lg:text-left text-3xl lg:text-5xl font-bold w-full">👋 I'm Matteo
                     Martinelli</h1>
                 <p className="text-center px-4 mt-2 md:mt-4 lg:text-left text-base md:text-lg lg:text-2xl">
