@@ -31,7 +31,7 @@ function ScrollSyncUrl() {
             })
         }, {
             threshold: 0.15,
-            rootMargin: '0px 0px -60% 0px',
+            rootMargin: '0px 0px -40% 0px',
         })
         sections.forEach(section => observer.observe(section))
         return () => sections.forEach(section => observer.unobserve(section))
