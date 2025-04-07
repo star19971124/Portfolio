@@ -19,7 +19,7 @@ function Landing() {
                     <polygon points="1,2 98,50 1,98" className="fill-base-100"/>
 
                     <image
-                        href="/io_colore2.png"
+                        href="/io_colore2.webp"
                         x="-17.3"
                         y="-10"
                         width="110"
