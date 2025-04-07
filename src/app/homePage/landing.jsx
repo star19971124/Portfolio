@@ -38,15 +38,11 @@ function Landing() {
                     For me, programming is the art of abstracting the world around us into elegant and efficient
                     solutions.</p>
                 <div className="mt-4 flex justify-center content-evenly items-center gap-4 lg:mt-8">
-                    <div>
+                    <a href="#experience">
                         <button className="btn btn-outline btn-primary">Visit</button>
-                    </div>
-                    <div>
-                        <p className="text-center lg:text-left text-base lg:text-2xl">or</p>
-                    </div>
-                    <div>
-                        <button className="btn btn-outline btn-secondary">Get the CV <DownloadIcon/></button>
-                    </div>
+                    </a>
+                    <p className="text-center lg:text-left text-base lg:text-2xl">or</p>
+                    <button className="btn btn-outline btn-secondary">Get the CV <DownloadIcon/></button>
                 </div>
             </div>
         </div>
