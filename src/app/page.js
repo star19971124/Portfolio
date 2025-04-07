@@ -6,6 +6,7 @@ import Projects from "@/app/projects/projects";
 import Contact from "@/app/contact/contact";
 import FloatingActionButton from "@/app/components/floatingActionButton";
 import ScrollSyncUrl from "@/app/components/clientComponents/scrollSyncUrl";
+import HomeDetector from "@/app/components/clientComponents/homeDetector";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">
@@ -28,6 +29,7 @@ export default function Home() {
         <section id="contact" className="w-screen  mt-60">
             <Contact></Contact>
         </section>
+        <HomeDetector/>
         <FloatingActionButton/>
         <ScrollSyncUrl/>
     </div>
