@@ -15,60 +15,70 @@ function ContactForm() {
     const emailErrorRef = useRef(null)
 
     useEffect(() => {
-        const checkFormValidity = () => {
-            console.log('validating form')
-            const nameInput = nameRef.current
-            const emailInput = emailRef.current
-            const messageInput = messageRef.current
+            const checkFormValidity = () => {
+                console.log('validating form')
+                const nameInput = nameRef.current
+                const emailInput = emailRef.current
+                const messageInput = messageRef.current
 
-            const isValid = nameInput.value.trim() !== '' && InputValidator.isValidMail(emailInput.value) && messageInput.value.trim() !== ''
-            console.log('form is valid?', isValid)
-            setState(prevState => {
-                return ({...prevState, isValid: isValid});
-            })
-        }
-
-        const handleEmailChange = (e) => {
-            const emailInput = e.target
-            const isValidEmail = InputValidator.isValidMail(emailInput.value)
-            isValidEmail ? emailErrorRef.current.classList.add('hidden') : emailErrorRef.current.classList.remove('hidden')
-            checkFormValidity()
-        }
-
-        const form = document.getElementById('contact-form')
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault()
+                const isValid = nameInput.value.trim() !== '' && InputValidator.isValidMail(emailInput.value) && messageInput.value.trim() !== ''
+                console.log('form is valid?', isValid)
                 setState(prevState => {
-                    return ({...prevState, isLoading: true});
+                    return ({...prevState, isValid: isValid});
                 })
-                // Logica di invio form
-                console.log('Form submitted', {
-                    name: nameRef.current.value, email: emailRef.current.value, message: messageRef.current.value
-                })
-            })
-        }
+            }
 
-        // Aggiungi gli event listeners per il controllo della validità
-        const nameInput = nameRef.current
-        const messageInput = messageRef.current
-        const emailInput = emailRef.current
+            const handleEmailChange = (e) => {
+                const emailInput = e.target
+                const isValidEmail = InputValidator.isValidMail(emailInput.value)
+                isValidEmail ? emailErrorRef.current.classList.add('hidden') : emailErrorRef.current.classList.remove('hidden')
+                checkFormValidity()
+            }
 
-        nameInput.addEventListener('input', checkFormValidity)
-        messageInput.addEventListener('input', checkFormValidity)
-        emailInput.addEventListener('input', handleEmailChange)
-
-        return () => {
-            // Rimuovi gli event listeners al momento della dismount
-            nameInput.removeEventListener('input', checkFormValidity)
-            messageInput.removeEventListener('input', checkFormValidity)
-            emailInput.removeEventListener('input', handleEmailChange)
-
+            const form = document.getElementById('contact-form')
             if (form) {
-                form.removeEventListener('submit', (e) => e.preventDefault())
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault()
+                    setState(prevState => {
+                        return ({...prevState, isLoading: true});
+                    })
+                    console.log('Form submitted', {
+                        name: nameRef.current.value, email: emailRef.current.value, message: messageRef.current.value
+                    })
+                    fetch('api/contact', {
+                        method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
+                            name: nameInput.value.trim(),
+                            email: emailInput.value.trim(),
+                            message: messageInput.value.trim(),
+                        })
+                    }).then(async res => console.log(await res.text()))
+                        .then(json => console.log(json))
+                        .catch(e => console.error(e))
+                })
+            }
+
+            // Aggiungi gli event listeners per il controllo della validità
+            const nameInput = nameRef.current
+            const messageInput = messageRef.current
+            const emailInput = emailRef.current
+
+            nameInput.addEventListener('input', checkFormValidity)
+            messageInput.addEventListener('input', checkFormValidity)
+            emailInput.addEventListener('input', handleEmailChange)
+
+            return () => {
+                // Rimuovi gli event listeners al momento della dismount
+                nameInput.removeEventListener('input', checkFormValidity)
+                messageInput.removeEventListener('input', checkFormValidity)
+                emailInput.removeEventListener('input', handleEmailChange)
+
+                if (form) {
+                    form.removeEventListener('submit', (e) => e.preventDefault())
+                }
             }
         }
-    }, [])
+
+        , [])
     console.log('state in form is', state)
     return (<form id="contact-form">
         <h2 className="footer-title text-xl lg:text-2xl flex items-center">Get in touch</h2>
