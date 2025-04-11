@@ -1,13 +1,12 @@
 import {Resend} from 'resend'
-import {NextRequest, NextResponse} from 'next/server';
+import {NextResponse} from 'next/server';
 import EmailTemplate from "@/app/components/emailTemplate";
 
-/*const resend = new Resend('')*/
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req) {
     try {
-
-        /*const {name, email, message, website} = await req.json()
+        const {name, email, message, website} = await req.json()
         console.log('name server', name)
         console.log('email server', email)
         console.log('msg server', message)
@@ -17,14 +16,16 @@ export async function POST(req) {
             return NextResponse.json({succcess: false}, {status: 400})
 
         const {data, error} = await resend.emails.send({
-            from: `${name} <contact@tvoosai.dev>`,
+            from: `${name} richiesta <contact@tvoosai.dev>`,
             to: ['tvoosai@gmail.com'],
+            trackClicks: false,
+            trackOpens: false,
             subject: `Contattato da ${name}`,
             replyTo: email,
             react: <EmailTemplate name={name} email={email} message={message}/>
-        })*/
+        })
 
-        if (true)
+        if (error)
             return NextResponse.json({success: false, error: error}, {status: 400})
         return NextResponse.json({success: true}, {status: 200})
 
