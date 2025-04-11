@@ -109,6 +109,7 @@ function ContactForm() {
             <textarea ref={messageRef} className="textarea textarea-primary h-24 w-full"
                       disabled={state.isLoading}></textarea>
         </label>
+        <input type="text" name="faxNumber" className="hidden" autoComplete="off" tabIndex="-1" aria-hidden="true"/>
         <FormButton state={state} submitRef={submitBtnRef}/>
     </form>)
 }
