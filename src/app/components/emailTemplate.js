@@ -1,7 +1,4 @@
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-
 function EmailTemplate({ name, email, message }) {
-
     return (
         <html>
         <body
@@ -29,7 +26,6 @@ function EmailTemplate({ name, email, message }) {
                             overflow: 'hidden',
                         }}
                     >
-                        {/* Navbar con logo */}
                         <tr>
                             <td
                                 style={{
@@ -46,8 +42,6 @@ function EmailTemplate({ name, email, message }) {
                                 />
                             </td>
                         </tr>
-
-                        {/* Contenuto */}
                         <tr>
                             <td style={{ padding: '30px 20px 10px', textAlign: 'left' }}>
                                 <strong style={{ fontSize: '18px' }}>
@@ -55,7 +49,6 @@ function EmailTemplate({ name, email, message }) {
                                 </strong>
                             </td>
                         </tr>
-
                         <tr>
                             <td style={{ padding: '20px', textAlign: 'left' }}>
                                 <p
