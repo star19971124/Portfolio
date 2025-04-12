@@ -63,6 +63,7 @@ function EmailTemplate({ name, email, message }) {
                                         fontSize: '16px',
                                         lineHeight: '1.6',
                                         margin: 0,
+                                        fontStyle: 'italic',
                                     }}
                                 >
                                     {message}
