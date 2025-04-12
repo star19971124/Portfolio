@@ -15,7 +15,7 @@ export async function POST(req) {
         if (website && website.trim() !== '') //used to handle bot mailer
             return NextResponse.json({succcess: false}, {status: 400})
 
-        const {data, error} = await resend.emails.send({
+        const {_, error} = await resend.emails.send({
             from: `${name} richiesta <contact@tvoosai.dev>`,
             to: ['tvoosai@gmail.com'],
             trackClicks: false,
@@ -28,9 +28,9 @@ export async function POST(req) {
         if (error)
             return NextResponse.json({success: false, error: error}, {status: 400})
         return NextResponse.json({success: true}, {status: 200})
-
     } catch (e) {
         console.error(e)
         NextResponse.json({success: false, error: e}, {status: 500})
     }
+
 }

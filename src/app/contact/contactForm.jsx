@@ -1,103 +1,62 @@
 "use client"
 
-import React, {useState, useEffect, useRef} from 'react'
-import {InputValidator} from "@/utils/inputValidator"
+import React, {useEffect, useReducer} from 'react'
 import FormButton from "@/app/components/formButton";
+import {contactReducer, initialState, ACTIONS} from "@/app/contact/contactReducer";
 
 function ContactForm() {
-    const [state, setState] = useState({isLoading: false, isValid: false, msgSent: false})
 
-    // Crea i ref per gli input
-    const nameRef = useRef(null)
-    const emailRef = useRef(null)
-    const messageRef = useRef(null)
-    const submitBtnRef = useRef(null)
-    const emailErrorRef = useRef(null)
+    const [state, dispatch] = useReducer(contactReducer, initialState)
+
+    const onNameChange = (e) => dispatch({action: ACTIONS.UPDATE_FIELD, field: 'name', value: e.target.value})
+
+    const onMailChange = (e) => dispatch({action: ACTIONS.UPDATE_FIELD, field: 'email', value: e.target.value})
+
+
+    const onMsgChange = (e) => dispatch({action: ACTIONS.UPDATE_FIELD, field: 'msg', value: e.target.value})
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        dispatch({action: ACTIONS.FORM_SUBMIT});
+        fetch('api/contact', {
+            method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
+                name: state.name, email: state.email, message: state.message,
+            })
+        }).then(res => res.json())
+            .then(json => dispatch({action: ACTIONS.RESPONSE_RECEIVED, value: json.success}))
+            .catch(_ => dispatch({action: ACTIONS.RESPONSE_RECEIVED, value: false}))
+    }
 
     useEffect(() => {
-            const checkFormValidity = () => {
-                console.log('validating form')
-                const nameInput = nameRef.current
-                const emailInput = emailRef.current
-                const messageInput = messageRef.current
-
-                const isValid = nameInput.value.trim() !== '' && InputValidator.isValidMail(emailInput.value) && messageInput.value.trim() !== ''
-                console.log('form is valid?', isValid)
-                setState(prevState => {
-                    return ({...prevState, isValid: isValid});
-                })
-            }
-
-            const handleEmailChange = (e) => {
-                const emailInput = e.target
-                const isValidEmail = InputValidator.isValidMail(emailInput.value)
-                isValidEmail ? emailErrorRef.current.classList.add('hidden') : emailErrorRef.current.classList.remove('hidden')
-                checkFormValidity()
-            }
-
-            const form = document.getElementById('contact-form')
-            if (form) {
-                form.addEventListener('submit', (e) => {
-                    e.preventDefault()
-                    setState(prevState => {
-                        return ({...prevState, isLoading: true});
-                    })
-                    console.log('Form submitted', {
-                        name: nameRef.current.value, email: emailRef.current.value, message: messageRef.current.value
-                    })
-                    fetch('api/contact', {
-                        method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
-                            name: nameInput.value.trim(),
-                            email: emailInput.value.trim(),
-                            message: messageInput.value.trim(),
-                        })
-                    }).then(async res => console.log(await res.text()))
-                        .then(json => console.log(json))
-                        .catch(e => console.error(e))
-                })
-            }
-
-            // Aggiungi gli event listeners per il controllo della validità
-            const nameInput = nameRef.current
-            const messageInput = messageRef.current
-            const emailInput = emailRef.current
-
-            nameInput.addEventListener('input', checkFormValidity)
-            messageInput.addEventListener('input', checkFormValidity)
-            emailInput.addEventListener('input', handleEmailChange)
-
-            return () => {
-                // Rimuovi gli event listeners al momento della dismount
-                nameInput.removeEventListener('input', checkFormValidity)
-                messageInput.removeEventListener('input', checkFormValidity)
-                emailInput.removeEventListener('input', handleEmailChange)
-
-                if (form) {
-                    form.removeEventListener('submit', (e) => e.preventDefault())
-                }
-            }
+        if (state.msgSent || state.error) {
+            console.log('USEEFFECT')
+            const timer = setTimeout(() => dispatch({action: ACTIONS.FEEDBACK_GIVEN}), 1000)
+            return () => clearTimeout(timer)
         }
+    }, [state.msgSent, state.error])
 
-        , [])
-    console.log('state in form is', state)
-    return (<form id="contact-form">
+    return (<form id="contact-form" onSubmit={onSubmit}>
         <h2 className="footer-title text-xl lg:text-2xl flex items-center">Get in touch</h2>
         <label className="form-control ">
             <div className="label">
                 <span className="label-text text-lg">Name</span>
             </div>
-            <input ref={nameRef} type="text"
-                   className="input input-bordered input-md input-primary w-full" disabled={state.isLoading}/>
+            <input type="text" onChange={onNameChange} value={state.name}
+                   className={`input input-bordered input-md input-primary w-full transition-all duration-300 ease-in-out
+                   ${isFieldDisabled(state) ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-text'}`}
+                   disabled={isFieldDisabled(state)}/>
         </label>
         <label className="form-control">
             <div className="label">
                 <span className="label-text text-lg">Email</span>
             </div>
-            <input ref={emailRef} type="email"
-                   className="input validator input-bordered input-md input-primary w-full"
-                   disabled={state.isLoading}/>
+            <input type="email" onChange={onMailChange} value={state.email}
+                   className={`input validator input-bordered input-md input-primary w-full transition-all duration-300 ease-in-out
+                   ${isFieldDisabled(state) ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-text'}`}
+                   disabled={isFieldDisabled(state)}/>
             <div className="label">
-          <span ref={emailErrorRef} className="label-text-alt hidden text-error">
+          <span className={`label-text-alt text-error transition-opacity duration-150  
+                ${state.validMail ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
             Enter valid email address
           </span>
             </div>
@@ -106,12 +65,17 @@ function ContactForm() {
             <div className="label">
                 <span className="label-text text-lg">Message</span>
             </div>
-            <textarea ref={messageRef} className="textarea textarea-primary h-24 w-full"
-                      disabled={state.isLoading}></textarea>
+            <textarea className={`textarea textarea-primary h-24 w-full transition-all duration-300 ease-in-out
+                   ${isFieldDisabled(state) ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-text'}`}
+                      onChange={onMsgChange} value={state.msg}
+                      disabled={isFieldDisabled(state)}></textarea>
         </label>
         <input type="text" name="faxNumber" className="hidden" autoComplete="off" tabIndex="-1" aria-hidden="true"/>
-        <FormButton state={state} submitRef={submitBtnRef}/>
+        <FormButton state={state}/>
     </form>)
 }
+
+const isFieldDisabled = (state) => state.isLoading || state.msgSent || state.error
+
 
 export default ContactForm

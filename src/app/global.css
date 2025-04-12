@@ -93,6 +93,10 @@ html {
     border-radius: 32px !important;
 }
 
+.force-outline:disabled {
+    @apply border text-gray-600 border-gray-600 bg-transparent cursor-not-allowed;
+}
+
 #particlesBackground canvas {
     width: 100% !important;
     height: 93% !important;
