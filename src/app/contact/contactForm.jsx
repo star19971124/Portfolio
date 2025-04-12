@@ -20,7 +20,7 @@ function ContactForm() {
         dispatch({action: ACTIONS.FORM_SUBMIT});
         fetch('api/contact', {
             method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
-                name: state.name, email: state.email, message: state.message,
+                name: state.name, email: state.email, message: state.msg,
             })
         }).then(res => res.json())
             .then(json => dispatch({action: ACTIONS.RESPONSE_RECEIVED, value: json.success}))
