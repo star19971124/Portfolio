@@ -7,32 +7,37 @@ class KnowledgeType {
     static WEB = new KnowledgeType('web');
     static DB_BACKEND = new KnowledgeType('db & backend');
     static MD_PROCESS = new KnowledgeType('media proc.');
+    static LANGUAGE = new KnowledgeType('language');
 
 
     dividerStyle() {
 
         switch (this.type) {
             case 'mobile':
-                return 'divider-primary'
+                return 'divider-mobile'
             case 'web':
-                return 'divider-accent'
+                return 'divider-web'
             case 'db & backend':
-                return 'divider-warning'
+                return 'divider-db'
             case 'media proc.':
-                return 'divider-error'
+                return 'divider-media'
+            case 'language':
+                return 'divider-languages'
         }
     }
 
-    progressStyle(){
+    progressStyle() {
         switch (this.type) {
             case 'mobile':
-                return 'progress-primary'
+                return 'progress-mobile';
             case 'web':
-                return 'progress-accent'
+                return 'progress-web';
             case 'db & backend':
-                return 'progress-warning'
+                return 'progress-db';
             case 'media proc.':
-                return 'progress-error'
+                return 'progress-media';
+            case 'language':
+                return 'progress-languages';
         }
     }
 
@@ -41,7 +46,7 @@ class KnowledgeType {
     }
 
     static values() {
-        return [this.MOBILE, this.WEB, this.DB_BACKEND, this.MD_PROCESS];
+        return [this.MOBILE, this.WEB, this.DB_BACKEND, this.MD_PROCESS, this.LANGUAGE];
     }
 }
 

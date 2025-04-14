@@ -56,6 +56,10 @@ html {
     scrollbar-width: none;
 }
 
+.landing-section {
+    /* nessuno stile, è solo una classe semantica */
+}
+
 @layer utilities {
     .masonry-grid {
         @apply columns-1 sm:columns-1 md:columns-2 lg:columns-3;
@@ -89,6 +93,10 @@ html {
     border-radius: 32px !important;
 }
 
+.force-outline:disabled {
+    @apply border text-gray-600 border-gray-600 bg-transparent cursor-not-allowed;
+}
+
 #particlesBackground canvas {
     width: 100% !important;
     height: 93% !important;
@@ -101,4 +109,48 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+}
+
+.progress-mobile {
+    @apply progress-primary;
+}
+
+.progress-web {
+    @apply progress-accent;
+}
+
+.progress-db {
+    @apply progress-warning;
+}
+
+.progress-media {
+    @apply progress-error;
+}
+
+.progress-languages {
+    @apply progress-success;
+}
+
+.divider-mobile {
+    @apply divider-primary;
+}
+
+.divider-web {
+    @apply divider-accent;
+}
+
+.divider-db {
+    @apply divider-warning;
+}
+
+.divider-media {
+    @apply divider-error;
+}
+
+.divider-languages {
+    @apply divider-success
+}
+
+.clickable-card{
+    @apply transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-2xl active:scale-95;
 }

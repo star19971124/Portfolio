@@ -1,6 +1,5 @@
 import "./global.css";
 
-
 export const metadata = {
   title: "Tvoosai",
   description: "Tvoosai portfolio",
