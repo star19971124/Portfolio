@@ -19,9 +19,9 @@ function LanguageDropdown() {
             tabIndex={0}
             className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-28 text-sm"
         >
-            <li><Link locale="en" href={pathname}><EnFlag/><span className="hidden lg:inline">EN</span></Link></li>
-            <li><Link locale="it" href={pathname}><ItFlag/><span className="hidden lg:inline">IT</span></Link></li>
-            <li><Link locale="de" href={pathname}><DeFlag/><span className="hidden lg:inline">DE</span></Link></li>
+            <li><Link locale="en" href={pathname}><EnFlag/><span>EN</span></Link></li>
+            <li><Link locale="it" href={pathname}><ItFlag/><span>IT</span></Link></li>
+            <li><Link locale="de" href={pathname}><DeFlag/><span>DE</span></Link></li>
         </ul>
     </div>
 }
