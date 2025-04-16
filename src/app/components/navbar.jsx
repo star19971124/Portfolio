@@ -1,6 +1,6 @@
 import HamburgerMenu from "@/app/components/icons/hamburgerMenu";
 import {useTranslations} from "next-intl";
-import LanguageDropdown from "@/app/languageDropdown";
+import LanguageDropdown from "@/app/components/languageDropdown";
 import Image from 'next/image';
 
 function Navbar() {

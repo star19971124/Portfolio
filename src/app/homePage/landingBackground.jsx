@@ -3,13 +3,14 @@ import {useEffect, useState} from "react";
 import {loadSlim} from "@tsparticles/slim";
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 
-const ParticlesBackground = () => {
+const ParticlesBackground = ({is404 = false}) => {
+    console.log('ci entroooo')
     const [state, setState] = useState({
         isLoaded: false, options: {
             detectRetina: true,
             pauseOnOutsideViewport: true,
             fullScreen: {
-                enable: false,
+                enable: is404,
                 zIndex: -1,
             },
             style: {
@@ -147,10 +148,10 @@ const ParticlesBackground = () => {
 
     return state.isLoaded &&
         <div className="w-full h-1/2">
-        <Particles id="particlesBackground"
-                   particlesLoaded={particlesLoaded}
-                   options={state.options}>
-        </Particles>
+            <Particles id="particlesBackground"
+                       particlesLoaded={particlesLoaded}
+                       options={state.options}>
+            </Particles>
         </div>
 }
 
