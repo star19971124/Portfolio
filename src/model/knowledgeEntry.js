@@ -1,6 +1,6 @@
 class KnowledgeEntry {
-    constructor(label, type, value) {
-        this.label = label;
+    constructor(key, type, value) {
+        this.key = key;
         this.type = type;
         this.value = value;
     }

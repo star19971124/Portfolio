@@ -1,0 +1,6 @@
+export const MOBILE = 'mobile'
+export const WEB = 'web'
+export const DB_BE = 'dbBackend'
+export const MEDIA_PROC = 'mediaProc'
+export const LANGUAGE = 'language'
+export const SKILLS_T_NODE = 'skills'

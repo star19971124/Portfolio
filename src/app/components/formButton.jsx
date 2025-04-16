@@ -1,8 +1,11 @@
 import React from "react";
 import CheckIcon from "@/app/components/icons/checkIcon";
 import ErrorIcon from "@/app/components/icons/errorIcon";
+import {useTranslations} from "next-intl";
+import {CONTACT_T_NODE, ERROR_BTN, OK_BTN, SUBMIT_BTN} from "@/features/contact/contact.constants";
 
 function FormButton({state}) {
+    const t = useTranslations(CONTACT_T_NODE)
     return (
         <button
             className={`
@@ -13,16 +16,16 @@ function FormButton({state}) {
       `}
             disabled={state.isLoading || !state.formFilled}
         >
-            {buttonBody(state.isLoading, state.msgSent, state.error)}
+            {buttonBody(t,state.isLoading, state.msgSent, state.error)}
         </button>
     );
 }
 
-function buttonBody(isLoading, msgSent, error) {
+function buttonBody(t,isLoading, msgSent, error) {
     if (isLoading) return <span className="loading loading-spinner"></span>;
-    if (msgSent) return <><CheckIcon/> Message sent</>
-    if (error) return <><ErrorIcon/> Something went wrong</>
-    return 'Submit';
+    if (msgSent) return <><CheckIcon/>{t(OK_BTN)}</>
+    if (error) return <><ErrorIcon/> {t(ERROR_BTN)}</>
+    return t(SUBMIT_BTN);
 }
 
 function buttonType(state) {

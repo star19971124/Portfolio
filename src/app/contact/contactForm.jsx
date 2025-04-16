@@ -3,9 +3,11 @@
 import React, {useEffect, useReducer} from 'react'
 import FormButton from "@/app/components/formButton";
 import {contactReducer, initialState, ACTIONS} from "@/app/contact/contactReducer";
+import {useTranslations} from "next-intl";
+import {CONTACT_T_NODE, EMAIL_FORM, FORM_TITLE, MESSAGE_FORM, NAME_FORM} from "@/features/contact/contact.constants";
 
 function ContactForm() {
-
+    const t = useTranslations(CONTACT_T_NODE)
     const [state, dispatch] = useReducer(contactReducer, initialState)
 
     const onNameChange = (e) => dispatch({action: ACTIONS.UPDATE_FIELD, field: 'name', value: e.target.value})
@@ -29,17 +31,16 @@ function ContactForm() {
 
     useEffect(() => {
         if (state.msgSent || state.error) {
-            console.log('USEEFFECT')
             const timer = setTimeout(() => dispatch({action: ACTIONS.FEEDBACK_GIVEN}), 1000)
             return () => clearTimeout(timer)
         }
     }, [state.msgSent, state.error])
 
     return (<form id="contact-form" onSubmit={onSubmit}>
-        <h2 className="footer-title text-xl lg:text-2xl flex items-center">Get in touch</h2>
+        <h2 className="footer-title text-xl lg:text-2xl flex items-center">{t(FORM_TITLE)}</h2>
         <label className="form-control ">
             <div className="label">
-                <span className="label-text text-lg">Name</span>
+                <span className="label-text text-lg">{t(NAME_FORM)}</span>
             </div>
             <input type="text" onChange={onNameChange} value={state.name}
                    className={`input input-bordered input-md input-primary w-full transition-all duration-300 ease-in-out
@@ -48,7 +49,7 @@ function ContactForm() {
         </label>
         <label className="form-control">
             <div className="label">
-                <span className="label-text text-lg">Email</span>
+                <span className="label-text text-lg">{t(EMAIL_FORM)}</span>
             </div>
             <input type="email" onChange={onMailChange} value={state.email}
                    className={`input validator input-bordered input-md input-primary w-full transition-all duration-300 ease-in-out
@@ -63,7 +64,7 @@ function ContactForm() {
         </label>
         <label className="form-control">
             <div className="label">
-                <span className="label-text text-lg">Message</span>
+                <span className="label-text text-lg">{t(MESSAGE_FORM)}</span>
             </div>
             <textarea className={`textarea textarea-primary h-24 w-full transition-all duration-300 ease-in-out
                    ${isFieldDisabled(state) ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-text'}`}

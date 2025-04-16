@@ -1,6 +1,8 @@
 import HamburgerMenu from "@/app/components/icons/hamburgerMenu";
+import {useTranslations} from "next-intl";
 
 function Navbar() {
+    const t = useTranslations('navbar')
     return <>
         <div className="navbar bg-base-100 text-neutral-content w-full sticky top-0 left-0 z-20">
             <div className="navbar-start">
@@ -18,20 +20,20 @@ function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#knowledge">Knowledge</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home">{t('home')}</a></li>
+                        <li><a href="#experience">{t('experience')}</a></li>
+                        <li><a href="#knowledge">{t('knowledge')}</a></li>
+                        <li><a href="#projects">{t('projects')}</a></li>
+                        <li><a href="#contact">{t('contact')}</a></li>
                     </ul>
                 </div>
                 <div className="lg:flex hidden  flex-none ">
                     <ul className="menu menu-horizontal px-4">
-                        <li><a href="#home" className="btn btn-ghost text-lg">Home</a></li>
-                        <li><a href="#experience" className="btn btn-ghost text-lg">Experience</a></li>
-                        <li><a href="#knowledge" className="btn btn-ghost text-lg">Knowledge</a></li>
-                        <li><a href="#projects" className="btn btn-ghost text-lg">Projects</a> </li>
-                        <li><a href="#contact" className="btn btn-ghost text-lg">Contact</a></li>
+                        <li><a href="#home" className="btn btn-ghost text-lg">{t('home')}</a></li>
+                        <li><a href="#experience" className="btn btn-ghost text-lg">{t('experience')}</a></li>
+                        <li><a href="#knowledge" className="btn btn-ghost text-lg">{t('knowledge')}</a></li>
+                        <li><a href="#projects" className="btn btn-ghost text-lg">{t('projects')}</a> </li>
+                        <li><a href="#contact" className="btn btn-ghost text-lg">{t('contact')}</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,48 +1,54 @@
+import {MOBILE, WEB, DB_BE, MEDIA_PROC, LANGUAGE} from "@/features/skills/skills.constants";
+
 class KnowledgeType {
     constructor(type) {
         this.type = type;
     }
 
-    static MOBILE = new KnowledgeType('mobile');
-    static WEB = new KnowledgeType('web');
-    static DB_BACKEND = new KnowledgeType('db & backend');
-    static MD_PROCESS = new KnowledgeType('media proc.');
-    static LANGUAGE = new KnowledgeType('language');
+    static MOBILE = new KnowledgeType(MOBILE);
+    static WEB = new KnowledgeType(WEB);
+    static DB_BACKEND = new KnowledgeType(DB_BE);
+    static MD_PROCESS = new KnowledgeType(MEDIA_PROC);
+    static LANGUAGE = new KnowledgeType(LANGUAGE);
 
 
     dividerStyle() {
 
         switch (this.type) {
-            case 'mobile':
+            case MOBILE:
                 return 'divider-mobile'
-            case 'web':
+            case WEB:
                 return 'divider-web'
-            case 'db & backend':
+            case DB_BE:
                 return 'divider-db'
-            case 'media proc.':
+            case MEDIA_PROC:
                 return 'divider-media'
-            case 'language':
+            case LANGUAGE:
                 return 'divider-languages'
         }
     }
 
     progressStyle() {
         switch (this.type) {
-            case 'mobile':
+            case MOBILE:
                 return 'progress-mobile';
-            case 'web':
+            case WEB:
                 return 'progress-web';
-            case 'db & backend':
+            case DB_BE:
                 return 'progress-db';
-            case 'media proc.':
+            case MEDIA_PROC:
                 return 'progress-media';
-            case 'language':
+            case LANGUAGE:
                 return 'progress-languages';
         }
     }
 
     label() {
         return this.type.toUpperCase()
+    }
+
+    value() {
+        return this.type
     }
 
     static values() {

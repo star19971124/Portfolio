@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="DEV: moved id home">
+    <list default="true" id="c7ecc0e6-47eb-4d21-8275-a7a01d8d8673" name="Changes" comment="ADD ideas file to gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/formButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/formButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/contactForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contactForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/experience/experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/experience/experience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/homePage/landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/homePage/landing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/knowledge/knowledge.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/knowledge/knowledge.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projectCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projectCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/knowledgeEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/knowledgeEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/knowledgeType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/knowledgeType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/projectEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/projectEntry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,43 +63,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Proofreading missing languages information&quot;: &quot;Proofreading missing languages information&quot;,
-    &quot;Notification.DoNotAsk-Proofreading missing languages information&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Users/Teo/StormProjects/portfolio/src/app/components&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;F:\\Program\\WebStorm 2024.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Proofreading missing languages information": "Proofreading missing languages information",
+    "Notification.DoNotAsk-Proofreading missing languages information": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/matte/WebstormProjects/portfolio/src/features/landingPage",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "configurable.tailwindcss",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\features\landingPage" />
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\features\landing" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\icons" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\public" />
-      <recent name="F:\Users\Teo\StormProjects\portfolio\src\model" />
-      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matte\WebstormProjects\portfolio\src\app\[locale]" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\public" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\home" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components" />
       <recent name="F:\Users\Teo\StormProjects\portfolio\src\app" />
-      <recent name="F:\Users\Teo\StormProjects\portfolio\src\app\components\knowledge" />
     </key>
   </component>
   <component name="RunManager">
@@ -331,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744022759883</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ADD ideas file to gitignore">
+      <option name="closed" value="true" />
+      <created>1744623648130</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1744623648130</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +400,8 @@
     <MESSAGE value="FIX: miss file in commit" />
     <MESSAGE value="DEV: change image from png to webp due to less charging page overloading" />
     <MESSAGE value="DEV: moved id home" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEV: moved id home" />
+    <MESSAGE value="ADD ideas file to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD ideas file to gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
