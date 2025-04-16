@@ -11,7 +11,7 @@ function LanguageDropdown() {
     const pathname = usePathname()
     const locale = useLocale()
 
-    return <div className="dropdown dropwon-start ml-2">
+    return <div className="dropdown dropwon-start">
         <div tabIndex={0} role="button" className="btn btn-sm btn-ghost">
             {currentLanguage(locale)}
         </div>
