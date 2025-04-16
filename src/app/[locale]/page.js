@@ -6,10 +6,12 @@ import Projects from "@/app/projects/projects";
 import Contact from "@/app/contact/contact";
 import FloatingActionButton from "@/app/components/floatingActionButton";
 import ScrollSyncUrl from "@/app/components/clientComponents/scrollSyncUrl";
+import {Analytics} from "@vercel/analytics/react"
 import HomeDetector from "@/app/components/clientComponents/homeDetector";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">
+        <Analytics/>
         <Navbar></Navbar>
         <section id="home" className="w-screen h-screen landing-section">
             <div className=" relative w-screen h-[93%] flex items-center justify-center z-10">
