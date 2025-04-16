@@ -1,5 +1,6 @@
 import HamburgerMenu from "@/app/components/icons/hamburgerMenu";
 import {useTranslations} from "next-intl";
+import LanguageDropdown from "@/app/languageDropdown";
 
 function Navbar() {
     const t = useTranslations('navbar')
@@ -11,8 +12,8 @@ function Navbar() {
                     <img src="/logo.svg" className="h-4" alt="home"/>
                 </div>
             </div>
-
             <div className="navbar-end">
+                <LanguageDropdown/>
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <HamburgerMenu></HamburgerMenu>
