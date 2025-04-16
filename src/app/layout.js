@@ -1,5 +1,4 @@
 import './global.css';
-import {Analytics} from "@vercel/analytics/react"
 
 
 export default function RootLayout({children, params}) {
@@ -8,7 +7,7 @@ export default function RootLayout({children, params}) {
         <head>
             <link rel="icon" href="/logo_short.svg"/>
         </head>
-        <body className="antialiased"><Analytics>{children}</Analytics></body>
+        <body className="antialiased">{children}</body>
         </html>
     );
 }
