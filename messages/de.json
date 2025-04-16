@@ -4,7 +4,7 @@
     "bio": "Full-Stack Developer mit Leidenschaft und Know-how in den Bereichen Mobile- und Webentwicklung – mit besonderem Interesse an IT-Sicherheit.\nFür mich ist Programmieren eine Kunst: die reale Welt in elegante und effiziente Lösungen zu verwandeln.",
     "visitBtn": "Besuchen",
     "or": "oder",
-    "getCvBtn": "CV herunterladen"
+    "getCvBtn": "CV Downloaden"
   },
   "navbar": {
     "home": "Home",
@@ -95,7 +95,7 @@
       "title": "Trivia Escape",
       "description": "Begib dich auf ein 2D-Trivia-Abenteuer im Weltraum! Steuere die Kugel durch komplexe Labyrinthe und beantworte die Fragen richtig, um den Ausgang zu erreichen. Das Spiel bietet zwei Modi: einen entspannten Modus ohne Zeitlimit und einen mit Zeitdruck für eine größere Herausforderung. Ziel ist es, das Projekt in eine Multiplayer-Version weiterzuentwickeln, um das Erlebnis noch spannender und wettbewerbsorientierter zu gestalten."
     },
-    "public": "öffentlich",
+    "public": "öff.",
     "private": "privat"
   },
   "contact": {

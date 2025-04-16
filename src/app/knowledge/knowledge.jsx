@@ -40,8 +40,8 @@ function buildKnowledgeByType(t,isLanguages= false){
                                 <span className="text-left font-medium uppercase">{t(v.key)}</span>
                             </FadeComponent>
                         </div>
-                        <div className={`${isLanguages ? 'w-3/4 lg:w-11/12' :'w-3/4'} flex justify-end items-center gap-4 `}>
-                            <div className="flex-grow ml-6 md:ml-0 mr-0 lg:mr-4">
+                        <div className={`${isLanguages ? 'w-3/4 lg:w-11/12' :'w-3/4'} flex justify-end items-center gap-2`}>
+                            <div className="flex-grow ml-8 md:ml-0 mr-0 lg:mr-4">
                                 <AnimatedProgress value={v.value}>
                                     <progress className={`progress w-full ${k.progressStyle()} `}
                                               value={v.value} max="10"/>

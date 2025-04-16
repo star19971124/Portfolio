@@ -11,6 +11,13 @@ export default {
     ],
     theme: {
         extend: {
+            typography: {
+                DEFAULT: {
+                    css: {
+                        hyphens: 'auto',
+                    }
+                }
+            },
             fontFamily: {
                 sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
                 mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace'],

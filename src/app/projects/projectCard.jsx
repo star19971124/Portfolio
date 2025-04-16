@@ -6,16 +6,16 @@ import Image from 'next/image';
 
 function ProjectCard({project}) {
     const t = useTranslations(PROJECTS_T_NODE)
-    return <div className="card card-compact text-start bg-base-100 shadow-xl mx-4">
+    return <div className="card card-compact text-start bg-base-100 shadow-xl mx-0 md:mx-4">
         <CardFigure project={project}/>
         <div className="card-body">
             <h2 className="card-title">{project.title}
                 <CardBadge project={project} translator={t}/>
             </h2>
-            <div className="card-description ">
+            <div className="card-description">
                 {project.description}
             </div>
-            <div className="card-actions mt-3">
+            <div className="card-actions mt-3 flex flex-wrap gap-1">
                 {
                     project.techList.map((tl, i) =>
                         <div key={i} className="badge badge-outline">{`#${tl}`}</div>
