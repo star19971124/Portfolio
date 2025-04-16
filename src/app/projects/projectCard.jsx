@@ -2,6 +2,7 @@ import GithubIcon from "@/app/components/icons/githubIcon";
 import LinkIcon from "@/app/components/icons/linkIcon";
 import {useTranslations} from "next-intl";
 import {PROJECTS_T_NODE} from "@/features/projects/projects.constants";
+import Image from 'next/image';
 
 function ProjectCard({project}) {
     const t = useTranslations(PROJECTS_T_NODE)
@@ -43,16 +44,26 @@ function CardBadge({project, translator}) {
 }
 
 function CardFigure({project}) {
+    const isClickable = !!project.url;
+
     return <figure>
         <a
-            href={project.url || "#"}
-            target={project.url ? "_blank" : "_self"}
-            rel={project.url ? "noopener noreferrer" : ""}
-            className={`block ${!project.url ? "pointer-events-none cursor-default" : ""}`}// Previene il comportamento di navigazione
+            href={isClickable ? project.url : '#'}
+            target={isClickable ? '_blank' : '_self'}
+            rel={isClickable ? 'noopener noreferrer' : ''}
+            className={`block ${!isClickable ? 'pointer-events-none cursor-default' : ''}`}
         >
-            <img src={project.imageUrl} className={`${project.url ? 'clickable-card' : ''}`}/>
+            <Image
+                src={project.imageUrl}
+                alt={project.title || 'Project image'}
+                width={800}
+                height={600}
+                className={`${isClickable ? 'clickable-card' : ''}`}
+                style={{width: '100%', height: 'auto'}}
+            />
         </a>
     </figure>
+
 }
 
 export default ProjectCard

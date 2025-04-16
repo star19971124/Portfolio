@@ -1,6 +1,7 @@
 import HamburgerMenu from "@/app/components/icons/hamburgerMenu";
 import {useTranslations} from "next-intl";
 import LanguageDropdown from "@/app/languageDropdown";
+import Image from 'next/image';
 
 function Navbar() {
     const t = useTranslations('navbar')
@@ -9,7 +10,7 @@ function Navbar() {
             <div className="navbar-start">
 
                 <div className="flex-1">
-                    <img src="/logo.svg" className="h-4" alt="home"/>
+                    <Image src="/logo.svg" alt="home" width={128} height={32} className="h-4 w-auto" priority />
                 </div>
             </div>
             <div className="navbar-end">
