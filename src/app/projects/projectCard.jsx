@@ -12,7 +12,7 @@ function ProjectCard({project}) {
             <h2 className="card-title">{project.title}
                 <CardBadge project={project} translator={t}/>
             </h2>
-            <div className="card-description">
+            <div className="card-description whitespace-pre-line">
                 {project.description}
             </div>
             <div className="card-actions mt-3 flex flex-wrap gap-1">

@@ -79,7 +79,7 @@
     "language": "sprachen"
   },
   "projects": {
-    "marvel": {
+    "afse": {
       "title": "Marvel-Stickerkollektion",
       "description": "Entdecke eine Webanwendung, die vollständig mit Vanilla JavaScript für eine Universitätsprüfung entwickelt wurde.\nDie App ermöglicht es den Nutzern, Marvel-Sticker zu sammeln, zu kaufen und zu tauschen.\nDas Frontend basiert auf einem selbst entwickelten Framework, das eine reibungslose Single Page Application (SPA)-Erfahrung bietet und eine unterbrechungsfreie Navigation garantiert. Die intuitive Benutzeroberfläche ermöglicht die Verwaltung der eigenen Sammlung und den Austausch mit anderen Nutzern."
     },

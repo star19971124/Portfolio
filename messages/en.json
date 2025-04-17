@@ -79,7 +79,7 @@
     "language": "languages"
   },
   "projects": {
-    "marvel": {
+    "afse": {
       "title": "Marvel Stickers Collection",
       "description": "Discover a web application built entirely with vanilla JavaScript, developed for a university exam. This app allows users to collect, buy, and trade Marvel stickers. The frontend is powered by a custom framework I created to ensure a smooth Single Page Application (SPA) experience, providing seamless navigation. Enjoy an intuitive interface for managing your collection and engaging in trades with others."
     },

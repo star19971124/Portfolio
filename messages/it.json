@@ -79,7 +79,7 @@
     "language": "lingue"
   },
   "projects": {
-    "marvel": {
+    "afse": {
       "title": "Collezione di Figurine Marvel",
       "description": "Scopri un'applicazione web realizzata interamente con vanilla JavaScript sviluppata per un esame universitario.\nL'app consente agli utenti di collezionare, acquistare e scambiare figurine Marvel.\nIl frontend è basato su un framework personalizzato che ho creato per offrire un'esperienza fluida in modalità Single Page Application (SPA), garantendo una navigazione senza interruzioni. L'interfaccia intuitiva permette di gestire la propria collezione e partecipare agli scambi con altri utenti."
     },

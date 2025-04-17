@@ -78,7 +78,7 @@ function init() {
         new KnowledgeEntry('mongodb', KnowledgeType.DB_BACKEND, 7),
     ])
     knowledgeMap.set(KnowledgeType.MD_PROCESS, [
-        new KnowledgeEntry('ffmpeg', KnowledgeType.MD_PROCESS, 6),
+        new KnowledgeEntry('ffmpeg', KnowledgeType.MD_PROCESS, 7),
     ])
     knowledgeMap.set(KnowledgeType.LANGUAGE, [
         new KnowledgeEntry('italian', KnowledgeType.LANGUAGE, 10),
