@@ -2,6 +2,7 @@ import DownloadIcon from "@/app/components/icons/downloadIcon";
 import ParticlesBackground from "@/app/homePage/landingBackground";
 import {useTranslations} from "next-intl";
 import {BIO, GET_CV_BTN, LANDING_PAGE_T_NODE, OR, TITLE, VISIT_BTN} from "@/features/landingPage/landingPage.constants";
+import CvBtn from "@/features/landingPage/components/cvBtn";
 
 function Landing() {
     const t = useTranslations(LANDING_PAGE_T_NODE)
@@ -40,7 +41,7 @@ function Landing() {
                         <button className="btn btn-outline btn-primary">{t(VISIT_BTN)}</button>
                     </a>
                     <p className="text-center lg:text-left text-base lg:text-2xl">{t(OR)}</p>
-                    <button className="btn btn-outline btn-secondary">{t(GET_CV_BTN)}<DownloadIcon/></button>
+                    <CvBtn/>
                 </div>
             </div>
         </div>

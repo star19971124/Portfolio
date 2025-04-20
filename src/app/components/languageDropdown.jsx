@@ -29,13 +29,13 @@ function LanguageDropdown() {
 function currentLanguage(locale) {
     switch (locale) {
         case 'en':
-            return <><EnFlag/><span className="hidden lg:inline uppercase">{locale}</span></>
+            return <div className="flex items-center justify-start gap-2 whitespace-nowrap"><EnFlag/><span className="hidden lg:inline uppercase mt-1">{locale}</span></div>
         case 'it':
-            return <><ItFlag/><span className="hidden lg:inline uppercase">{locale}</span></>
+            return <div className="flex items-center justify-start gap-2 whitespace-nowrap"><ItFlag/><span className="hidden lg:inline uppercase mt-1">{locale}</span></div>
         case 'de':
-            return <><DeFlag/><span className="hidden lg:inline uppercase">{locale}</span></>
+            return <div className="flex items-center justify-start gap-2 whitespace-nowrap"><DeFlag/><span className="hidden lg:inline uppercase mt-1">{locale}</span></div>
         default:
-            return <><EnFlag/><span className="hidden lg:inline uppercase">{locale}</span></>
+            return <div ><EnFlag/><span className="hidden lg:inline uppercase mt-1">{locale}</span></div>
     }
 }
 

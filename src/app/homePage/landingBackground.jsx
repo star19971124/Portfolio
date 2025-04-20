@@ -4,7 +4,6 @@ import {loadSlim} from "@tsparticles/slim";
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 
 const ParticlesBackground = ({is404 = false}) => {
-    console.log('ci entroooo')
     const [state, setState] = useState({
         isLoaded: false, options: {
             detectRetina: true,
@@ -123,28 +122,6 @@ const ParticlesBackground = ({is404 = false}) => {
     const particlesLoaded = (container) => {
         console.log(container)
     }
-
-    /*
-        const updateColors = () => {
-            if (typeof window !== "undefined") {
-                const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-                setBackgroundColor(isDarkMode ?  "#111827" : "#faf9f6");
-                setStrokeColor(isDarkMode ? "#14b8a6" :"#10b981");
-            }
-        };
-
-        useEffect(() => {
-
-            // Inizializza i colori al montaggio
-            updateColors();
-
-            // Osserva i cambiamenti del tema
-            const observer = new MutationObserver(updateColors);
-            observer.observe(document.documentElement, { attributes: true, attributeFilter: ["style", "class"] });
-
-            return () => observer.disconnect();
-        }, []);*/
-
 
     return state.isLoaded &&
         <div className="w-full h-1/2">
