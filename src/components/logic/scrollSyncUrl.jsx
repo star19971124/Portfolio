@@ -1,5 +1,6 @@
 "use client"
 import {useEffect, useRef} from "react"
+import {HOME_SECTION} from "@/features/landingPage/landingPage.constants";
 
 const sectionTitles = {
     home: 'Tvoosai',
@@ -12,7 +13,6 @@ const sectionTitles = {
 function ScrollSyncUrl() {
     const current = useRef(null)
     useEffect(() => {
-        console.log('hello motherfucker')
         const sections = document.querySelectorAll('section[id]')
         sections.forEach(s => console.log(`sections are ${s.getAttribute('id')}`))
 
@@ -23,7 +23,7 @@ function ScrollSyncUrl() {
                 if (!entry.isIntersecting) return
                 const id = entry.target.getAttribute('id')
                 if (id && id !== current.current) {
-                    const newUrl = id !== 'home' ? `/#${id}` : '/'
+                    const newUrl = id !== HOME_SECTION ? `/#${id}` : '/'
                     history.replaceState(null, '', newUrl)
                     document.title = sectionTitles[id] || 'Tvoosai'
                     current.current = id

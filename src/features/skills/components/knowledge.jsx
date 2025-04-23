@@ -1,8 +1,8 @@
-import KnowledgeType from "@/model/knowledgeType";
-import KnowledgeEntry from "@/model/knowledgeEntry";
-import FadeComponent from "@/app/components/clientComponents/fadeComponent";
+import KnowledgeType from "@/features/skills/model/knowledgeType";
+import KnowledgeEntry from "@/features/skills/model/knowledgeEntry";
+import FadeComponent from "@/components/motion/fadeComponent";
 import React from "react";
-import AnimatedProgress from "@/app/components/clientComponents/animatedProgress";
+import AnimatedProgress from "@/components/motion/animatedProgress";
 import {useTranslations} from "next-intl";
 import {SKILLS_T_NODE} from "@/features/skills/skills.constants";
 

@@ -1,6 +1,6 @@
-import WorkIcon from "../components/icons/workIcon.jsx";
-import StudyIcon from "../components/icons/studyIcon.jsx";
-import FadeComponent from "../components/clientComponents/fadeComponent.jsx";
+import WorkIcon from "@/components/icons/workIcon.jsx";
+import StudyIcon from "@/components/icons/studyIcon.jsx";
+import FadeComponent from "../../../components/motion/fadeComponent.jsx";
 
 // eslint-disable-next-line react/prop-types
 function TimelineIcon({work = true}) {

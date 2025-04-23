@@ -1,4 +1,4 @@
-import ParticlesBackground from "@/app/homePage/landingBackground";
+import ParticlesBackground from "@/features/landingPage/components/landingBackground";
 
 export default function GlobalNotFound() {
     return (

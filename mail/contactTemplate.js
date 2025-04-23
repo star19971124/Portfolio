@@ -1,4 +1,4 @@
-function EmailTemplate({ name, email, message }) {
+function ContactTemplate({ name, email, message }) {
     return (
         <html>
         <body
@@ -72,4 +72,4 @@ function EmailTemplate({ name, email, message }) {
     );
 }
 
-export default EmailTemplate
+export default ContactTemplate

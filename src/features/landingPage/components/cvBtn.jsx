@@ -2,7 +2,7 @@
 
 import {useLocale, useTranslations} from "next-intl";
 import {CV_PATH, GET_CV_BTN, LANDING_PAGE_T_NODE} from "@/features/landingPage/landingPage.constants";
-import DownloadIcon from "@/app/components/icons/downloadIcon";
+import DownloadIcon from "@/components/icons/downloadIcon";
 
 function CvBtn() {
     const locale = useLocale()

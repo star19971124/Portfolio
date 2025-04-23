@@ -1,5 +1,5 @@
-import GithubIcon from "@/app/components/icons/githubIcon";
-import LinkIcon from "@/app/components/icons/linkIcon";
+import GithubIcon from "@/components/icons/githubIcon";
+import LinkIcon from "@/components/icons/linkIcon";
 import {useTranslations} from "next-intl";
 import {PROJECTS_T_NODE} from "@/features/projects/projects.constants";
 import Image from 'next/image';

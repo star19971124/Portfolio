@@ -1,7 +1,7 @@
-import MarkerIcon from "@/app/components/icons/markerIcon";
-import MailIcon from "@/app/components/icons/mailIcon";
-import PhoneIcon from "@/app/components/icons/phoneIcon";
-import ContactForm from "@/app/contact/contactForm";
+import MarkerIcon from "@/components/icons/markerIcon";
+import MailIcon from "@/components/icons/mailIcon";
+import PhoneIcon from "@/components/icons/phoneIcon";
+import ContactForm from "@/features/contact/components/contactForm";
 import {useTranslations} from "next-intl";
 import {CONTACT_T_NODE, CONTACT_TITLE, LOCATION, RIGHTS} from "@/features/contact/contact.constants";
 

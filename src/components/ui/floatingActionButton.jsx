@@ -1,5 +1,6 @@
 "use client"
-import {useIsOutOfView} from "@/app/components/hook/useIsOutOfView";
+
+import { useIsOutOfView } from '@/hooks/useIsOutOfView'
 
 function FloatingActionButton() {
     const isButtonVisible = useIsOutOfView('.landing-section')

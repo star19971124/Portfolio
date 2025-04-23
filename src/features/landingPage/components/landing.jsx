@@ -1,5 +1,5 @@
-import DownloadIcon from "@/app/components/icons/downloadIcon";
-import ParticlesBackground from "@/app/homePage/landingBackground";
+import DownloadIcon from "@/components/icons/downloadIcon";
+import ParticlesBackground from "@/features/landingPage/components/landingBackground";
 import {useTranslations} from "next-intl";
 import {BIO, GET_CV_BTN, LANDING_PAGE_T_NODE, OR, TITLE, VISIT_BTN} from "@/features/landingPage/landingPage.constants";
 import CvBtn from "@/features/landingPage/components/cvBtn";

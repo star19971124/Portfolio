@@ -1,6 +1,6 @@
-import ProjectEntry from "@/model/projectEntry";
-import ProjectCard from "@/app/projects/projectCard";
-import MasonryLayout from "@/app/components/clientComponents/masonryLayout";
+import ProjectEntry from "@/features/projects/model/projectEntry";
+import ProjectCard from "@/features/projects/components/projectCard";
+import MasonryLayout from "@/components/layout/masonryLayout";
 import {useTranslations} from "next-intl";
 import {PROJECTS_T_NODE, MARVEL, PORTFOLIO, FAKE_FOOTBALL, TRIVIA} from "@/features/projects/projects.constants";
 

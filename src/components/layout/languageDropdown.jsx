@@ -1,9 +1,9 @@
 "use client"
 
 import {Link, usePathname} from "@/i18n/navigation";
-import ItFlag from "@/app/components/icons/ItFlag";
-import EnFlag from "@/app/components/icons/EnFlag";
-import DeFlag from "@/app/components/icons/DeFlag";
+import ItFlag from "@/components/icons/itFlag";
+import EnFlag from "@/components/icons/enFlag";
+import DeFlag from "@/components/icons/deFlag";
 import {useLocale} from "next-intl";
 
 function LanguageDropdown() {

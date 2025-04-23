@@ -1,8 +1,8 @@
 "use client"
 
 import React, {useEffect, useReducer} from 'react'
-import FormButton from "@/app/components/formButton";
-import {contactReducer, initialState, ACTIONS} from "@/app/contact/contactReducer";
+import FormButton from "@/features/contact/components/formButton";
+import {contactReducer, initialState, ACTIONS} from "@/features/contact/store/contactReducer";
 import {useTranslations} from "next-intl";
 import {CONTACT_T_NODE, EMAIL_FORM, FORM_TITLE, MESSAGE_FORM, NAME_FORM} from "@/features/contact/contact.constants";
 

@@ -1,7 +1,7 @@
-import ExperienceEntry from "@/model/experienceEntry";
-import RevealOnScroll from "@/app/components/clientComponents/revealOnScroll";
-import TimelineIcon from "@/app/experience/timelineIcon";
-import TimelineElement from "@/app/experience/timelineElement";
+import ExperienceEntry from "@/features/experience/model/experienceEntry";
+import RevealOnScroll from "@/components/motion/revealOnScroll";
+import TimelineIcon from "@/features/experience/components/timelineIcon";
+import TimelineElement from "@/features/experience/components/timelineElement";
 import {useTranslations} from "next-intl";
 import {
     ANDROID_CERT,

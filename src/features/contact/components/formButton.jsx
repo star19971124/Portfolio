@@ -1,6 +1,6 @@
 import React from "react";
-import CheckIcon from "@/app/components/icons/checkIcon";
-import ErrorIcon from "@/app/components/icons/errorIcon";
+import CheckIcon from "@/components/icons/checkIcon";
+import ErrorIcon from "@/components/icons/errorIcon";
 import {useTranslations} from "next-intl";
 import {CONTACT_T_NODE, ERROR_BTN, OK_BTN, SUBMIT_BTN} from "@/features/contact/contact.constants";
 

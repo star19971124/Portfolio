@@ -1,6 +1,6 @@
 import {Resend} from 'resend'
 import {NextResponse} from 'next/server';
-import EmailTemplate from "@/app/components/emailTemplate";
+import ContactTemplate from "../../../../mail/contactTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -22,7 +22,7 @@ export async function POST(req) {
             trackOpens: false,
             subject: `Contattato da ${name}`,
             replyTo: email,
-            react: <EmailTemplate name={name} email={email} message={message}/>
+            react: <ContactTemplate name={name} email={email} message={message}/>
         })
 
         if (error)
