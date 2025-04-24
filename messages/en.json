@@ -85,7 +85,7 @@
     },
     "portfolio": {
       "title":"Personal portfolio",
-      "description":"Explore my personal portfolio built with Next.js and styled using Tailwind CSS and DaisyUI. The site is fully responsive, multilingual (Italian, English, and German), and automatically adapts to the user's system preferences—supporting both light and dark themes as well as system language—to deliver a tailored user experience. I focused on optimizing both server-side and client-side rendering to ensure fast load times and high performance. The interface is clean and consistent, designed to effectively showcase my skills, projects, and professional background."
+      "description":"Explore my portfolio built with Next.js and styled using Tailwind CSS and DaisyUI. The site is fully responsive, multilingual (Italian, English, and German), and automatically adapts to the user’s system preferences for language and color scheme (light or dark mode), providing a personalized and accessible experience.\nI have focused on both server-side and client-side rendering optimizations to ensure fast load times and high performance. The interface is modern and consistent, designed to highlight my skills, projects, and professional experience.\nThe website is optimized for both technical and semantic SEO: it uses structured tags, localized dynamic metadata (title, description, canonical, hreflang), supports Twitter Cards and Open Graph for effective social sharing, and implements a multilingual sitemap and a custom robots.txt file. It follows Google’s mobile-first indexing guidelines and accessibility best practices."
     },
     "fakeFootball": {
       "title": "Team Management & Match Streaming",
@@ -109,5 +109,27 @@
     "contactTitle": "contact info",
     "location": "Milan, IT",
     "rights": "© Tvoosai. All rights reserved"
+  },
+  "meta": {
+    "home": {
+      "title": "Tvoosai – Mobile & Web Developer Freelance",
+      "description": "Portfolio of Matteo, a mobile and web freelance developer skilled in Flutter, React, and modern backend technologies."
+    },
+    "experience": {
+      "title": "Work Experience – Flutter, React, Backend | Tvoosai",
+      "description": "Explore Matteo's work experience and certifications in mobile and web development."
+    },
+    "skills": {
+      "title": "Technical Skills – Tech Stack | Tvoosai",
+      "description": "Programming languages, tools, and technologies Matteo uses in his projects."
+    },
+    "projects": {
+      "title": "Projects – Matteo’s Portfolio | Tvoosai",
+      "description": "A selection of personal and commercial projects developed by Matteo."
+    },
+    "contact": {
+      "title": "Contact Me – Freelance & Collaborations | Tvoosai",
+      "description": "Get in touch with Matteo for collaborations, freelance opportunities, or tech networking."
+    }
   }
 }

@@ -85,7 +85,7 @@
     },
     "portfolio": {
       "title": "Persönliches Portfolio",
-      "description": "Entdecke mein Portfolio, das mit Next.js entwickelt und mit Tailwind CSS und DaisyUI gestaltet wurde. Die Website ist responsiv, mehrsprachig (Italienisch, Englisch und Deutsch) und passt sich automatisch dem hellen oder dunklen Systemthema sowie der Systemsprache an – für ein personalisiertes Nutzererlebnis. Besonders geachtet habe ich auf die Optimierung des Renderings sowohl auf Server- als auch auf Client-Seite, um schnelle Ladezeiten und hohe Leistung zu gewährleisten. Die Oberfläche ist modern und konsistent gestaltet, um meine Fähigkeiten, Projekte und Berufserfahrungen bestmöglich zu präsentieren."
+      "description": "Entdecke mein Portfolio, das mit Next.js entwickelt und mit Tailwind CSS und DaisyUI gestaltet wurde. Die Website ist vollständig responsiv, mehrsprachig (Italienisch, Englisch und Deutsch) und passt sich automatisch den Systemeinstellungen des Nutzers in Bezug auf Sprache und Farbschema (Hell- oder Dunkelmodus) an – für ein personalisiertes und zugängliches Nutzererlebnis.\nIch habe besonderes Augenmerk auf die Optimierung des Server- und Client-Side-Renderings gelegt, um schnelle Ladezeiten und eine hohe Performance zu gewährleisten. Die Benutzeroberfläche ist modern und konsistent gestaltet, um meine Fähigkeiten, Projekte und beruflichen Erfahrungen optimal zu präsentieren.\nDie Seite ist sowohl technisch als auch semantisch für Suchmaschinen optimiert: Sie verwendet strukturierte Tags, dynamisch lokalisierte Metadaten (title, description, canonical, hreflang), unterstützt Twitter Cards und Open Graph für eine effektive Social-Media-Vorschau und bietet eine mehrsprachige Sitemap sowie eine benutzerdefinierte robots.txt. Sie erfüllt die Anforderungen von Googles Mobile-First-Indexierung und folgt den aktuellen Standards zur Barrierefreiheit."
     },
     "fakeFootball": {
       "title": "Teamverwaltung & Match-Streaming",
@@ -109,5 +109,27 @@
     "contactTitle": "Kontaktinformationen",
     "location": "Mailand, IT",
     "rights": "© Tvoosai. Alle Rechte vorbehalten"
+  },
+  "meta": {
+    "home": {
+      "title": "Tvoosai – Freiberuflicher Mobile- & Webentwickler",
+      "description": "Portfolio von Matteo, freiberuflicher Entwickler für Mobile- und Webanwendungen mit Erfahrung in Flutter, React und modernen Backends."
+    },
+    "experience": {
+      "title": "Berufserfahrung – Flutter, React, Backend | Tvoosai",
+      "description": "Entdecken Sie Matteos Berufserfahrung und Zertifizierungen in der Entwicklung von Apps und Weblösungen."
+    },
+    "skills": {
+      "title": "Technische Fähigkeiten – Tech Stack | Tvoosai",
+      "description": "Programmiersprachen, Tools und Technologien, die Matteo in seinen Projekten verwendet."
+    },
+    "projects": {
+      "title": "Projekte – Matteos Portfolio | Tvoosai",
+      "description": "Eine Auswahl persönlicher und kommerzieller Projekte, die von Matteo entwickelt wurden."
+    },
+    "contact": {
+      "title": "Kontakt – Freelance & Zusammenarbeit | Tvoosai",
+      "description": "Nehmen Sie Kontakt mit Matteo auf für Freelance-Projekte, Zusammenarbeit oder technisches Networking."
+    }
   }
 }
