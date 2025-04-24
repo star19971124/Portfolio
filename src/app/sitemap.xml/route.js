@@ -17,7 +17,7 @@ ${routes
         .map(
             ({ path, priority }) => `
   <url>
-    <loc>${baseUrl}/${path}</loc>
+    <loc>${baseUrl}${path ? `/${path}` : ''}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${priority}</priority>
