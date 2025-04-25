@@ -42,10 +42,11 @@ export async function generateMetadata({params}) {
             siteName: 'Tvoosai Portfolio',
             images: [
                 {
-                    url: '/og-image.png',
+                    url: `${baseUrl}/og-image.png`,
                     width: 1200,
                     height: 630,
-                    alt: meta.title
+                    alt: meta.title,
+                    secureUrl: `${baseUrl}/og-image.png`
                 }
             ],
             type: 'website'
