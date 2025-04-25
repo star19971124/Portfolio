@@ -3,14 +3,16 @@ import { NextResponse } from 'next/server'
 export const runtime = 'edge'
 
 export async function GET() {
-    const baseUrl = 'https://tvoosai.dev'
-    const lastmod = process.env.NEXT_PUBLIC_LASTMOD || '2025-01-01' // Injected at build time
+    const baseUrl = 'https://tvoosai.dev' // ✅ senza www
+    const lastMod = process.env.NEXT_PUBLIC_LASTMOD || '2025-01-01'
 
     const routes = [
-        { path: '', priority: 1.0 }, // Homepage
+        { path: '', priority: 1.0 },     // homepage
+        { path: 'it', priority: 0.9 },
+        { path: 'en', priority: 0.9 },
+        { path: 'de', priority: 0.9 }
     ]
 
-    // Genera XML della sitemap
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes
@@ -18,7 +20,7 @@ ${routes
             ({ path, priority }) => `
   <url>
     <loc>${baseUrl}${path ? `/${path}` : ''}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${lastMod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${priority}</priority>
   </url>`
