@@ -15,9 +15,10 @@ export const metadata = {
     },
 }
 
-export default function RootLayout({children, params}) {
+export default async  function RootLayout({children, params}) {
+    const {locale} = await params
     return (
-        <html lang={params.locale}>
+        <html lang={locale}>
         <head>
             <link rel="icon" href="/logo_short.svg"/>
             <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />

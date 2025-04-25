@@ -12,7 +12,7 @@ function CvBtn() {
         (locale === 'it' ? CV_PATH + locale : CV_PATH + 'en') + '.pdf'
 
 
-    return <a href={getFileName()} download>
+    return <a aria-label="Download CV" href={getFileName()} download>
         <button className="btn btn-outline btn-secondary">{t(GET_CV_BTN)}<DownloadIcon/></button>
     </a>
 }

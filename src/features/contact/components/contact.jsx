@@ -29,7 +29,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <h6 className="footer-title mt-8 text-center">{t(RIGHTS)}</h6>
+            <p className="footer-title mt-8 text-center">{t(RIGHTS)}</p>
         </div>
     </footer>
 

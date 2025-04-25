@@ -37,7 +37,7 @@ function Landing() {
                 <p className="text-center whitespace-pre-line px-4 mt-2 md:mt-4 lg:text-left text-base md:text-lg lg:text-2xl">
                     {t(BIO)}</p>
                 <div className="mt-4 flex justify-center content-evenly items-center gap-4 lg:mt-8">
-                    <a href="#experience">
+                    <a href="#experience" aria-label="Visit the page">
                         <button className="btn btn-outline btn-primary">{t(VISIT_BTN)}</button>
                     </a>
                     <p className="text-center lg:text-left text-base lg:text-2xl">{t(OR)}</p>
