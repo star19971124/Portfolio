@@ -10,6 +10,8 @@ const nextConfig = {
     env: {
         NEXT_PUBLIC_LASTMOD: buildDate,
     },
+    trailingSlash: true,  // Important for GitHub Pages to work correctly
+
 }
 
 export default withNextIntl(nextConfig)
