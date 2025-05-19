@@ -17,16 +17,6 @@ const m = [
         url: 'https://github.com/MatteoMartinelliMM/portfolio',
         techList: ['NextJS', 'React', 'TailwindCSS', 'DaisyUI']
     },
-    {
-        key: FAKE_FOOTBALL,
-        imageUrl: '/fakeFootball.webp',
-        techList: ['Flutter', 'Bloc', 'Firebase', 'FFmpeg']
-    },
-    {
-        key: TRIVIA,
-        imageUrl: '/trivia.webp',
-        techList: ['Flutter', 'Bloc', 'NoSQL']
-    },
 ]
 
 function Projects() {

@@ -9,7 +9,7 @@ function CvBtn() {
     const t = useTranslations(LANDING_PAGE_T_NODE)
 
     const getFileName = () =>
-        (locale === 'it' ? CV_PATH + locale : CV_PATH + 'en') + '.pdf'
+        (locale === 'it' ? CV_PATH + locale : CV_PATH) + '.pdf'
 
 
     return <a aria-label="Download CV" href={getFileName()} download>

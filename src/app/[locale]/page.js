@@ -16,7 +16,7 @@ import {CONTACT_SECTION} from "@/features/contact/contact.constants";
 
 export default function Home() {
     return <div className="flex flex-col items-center justify-center">
-        <Analytics/>
+        {/* <Analytics/> */}
         <Navbar></Navbar>
         <section id={HOME_SECTION} className="w-screen h-screen landing-section">
             <div className=" relative w-screen h-[93%] flex items-center justify-center z-10">
@@ -25,7 +25,7 @@ export default function Home() {
         </section>
         <div className="main-body flex-grow ">
             <section id={EXPERIENCE_SECTION}
-                     className="min-h-screen w-full scroll-mt-28">
+                     className="min-h-screen w-full scroll-mt-28" style={{minHeight:"70vh"}}>
                 <Experience></Experience></section>
             <section id={SKILL_SECTION} className="min-h-screen flex items-center justify-center">
                 <Knowledge></Knowledge></section>

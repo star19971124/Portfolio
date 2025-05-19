@@ -16,11 +16,6 @@ function Knowledge() {
                 buildKnowledgeByType(t,false)
             }
         </div>
-        <div className="container mx-auto flex flex-col mt-5">
-            {
-                buildKnowledgeByType(t,true)
-            }
-        </div>
     </div>
 
 }
@@ -60,30 +55,25 @@ function buildKnowledgeByType(t,isLanguages= false){
 function init() {
     const knowledgeMap = new Map();
     knowledgeMap.set(KnowledgeType.MOBILE, [
-        new KnowledgeEntry('java', KnowledgeType.MOBILE, 10),
-        new KnowledgeEntry('kotlin', KnowledgeType.MOBILE, 10),
-        new KnowledgeEntry('flutter', KnowledgeType.MOBILE, 10),
+        new KnowledgeEntry('java', KnowledgeType.MOBILE, 8),
+        new KnowledgeEntry('kotlin', KnowledgeType.MOBILE, 8),
     ])
     knowledgeMap.set(KnowledgeType.WEB, [
-        new KnowledgeEntry('javascript', KnowledgeType.WEB, 9),
-        new KnowledgeEntry('react', KnowledgeType.WEB, 7),
+        new KnowledgeEntry('javascript', KnowledgeType.WEB, 10),
+        new KnowledgeEntry('react', KnowledgeType.WEB, 9),
         new KnowledgeEntry('nextJs', KnowledgeType.WEB, 8),
-        new KnowledgeEntry('tailwind', KnowledgeType.WEB, 7),
+        new KnowledgeEntry('tailwind', KnowledgeType.WEB, 10),
+        new KnowledgeEntry('typescript', KnowledgeType.WEB, 9),
     ])
     knowledgeMap.set(KnowledgeType.DB_BACKEND, [
-        new KnowledgeEntry('posgresql', KnowledgeType.DB_BACKEND, 9),
+        new KnowledgeEntry('posgresql', KnowledgeType.DB_BACKEND, 7),
         new KnowledgeEntry('nodeJs', KnowledgeType.DB_BACKEND, 9),
-        new KnowledgeEntry('firebase', KnowledgeType.DB_BACKEND, 10),
-        new KnowledgeEntry('supabase', KnowledgeType.DB_BACKEND, 8),
-        new KnowledgeEntry('mongodb', KnowledgeType.DB_BACKEND, 7),
+        new KnowledgeEntry('firebase', KnowledgeType.DB_BACKEND, 8),
+        new KnowledgeEntry('supabase', KnowledgeType.DB_BACKEND, 7),
+        new KnowledgeEntry('mongodb', KnowledgeType.DB_BACKEND, 9),
     ])
     knowledgeMap.set(KnowledgeType.MD_PROCESS, [
         new KnowledgeEntry('ffmpeg', KnowledgeType.MD_PROCESS, 7),
-    ])
-    knowledgeMap.set(KnowledgeType.LANGUAGE, [
-        new KnowledgeEntry('italian', KnowledgeType.LANGUAGE, 10),
-        new KnowledgeEntry('english', KnowledgeType.LANGUAGE, 9),
-        new KnowledgeEntry('german', KnowledgeType.LANGUAGE, 8),
     ])
     return knowledgeMap
 }

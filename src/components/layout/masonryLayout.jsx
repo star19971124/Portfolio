@@ -8,7 +8,7 @@ function MasonryLayout({children}) {
     useEffect(() => {
         const updateColumnCount = () => {
             if (window.innerWidth >= 1024) {
-                setColumnCount(3)
+                setColumnCount(2)
                 return
             }
             if (window.innerWidth >= 640) {
@@ -35,7 +35,7 @@ function MasonryLayout({children}) {
     return (
         <div className="flex ">
             {columns.map((col, colIndex) => (
-                <div key={colIndex} className="flex flex-col w-full md:w-1/2 lg:w-1/3 ">
+                <div key={colIndex} className="flex flex-col w-full md:w-1/2 lg:w-1/2 ">
                     {col.map((item, itemIndex) => (
                         <div key={itemIndex} className="mt-5">
                             {item}

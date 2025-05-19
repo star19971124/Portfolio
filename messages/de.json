@@ -87,14 +87,6 @@
       "title": "Persönliches Portfolio",
       "description": "Entdecke mein Portfolio, das mit Next.js entwickelt und mit Tailwind CSS und DaisyUI gestaltet wurde. Die Website ist vollständig responsiv, mehrsprachig (Italienisch, Englisch und Deutsch) und passt sich automatisch den Systemeinstellungen des Nutzers in Bezug auf Sprache und Farbschema (Hell- oder Dunkelmodus) an – für ein personalisiertes und zugängliches Nutzererlebnis.\nIch habe besonderes Augenmerk auf die Optimierung des Server- und Client-Side-Renderings gelegt, um schnelle Ladezeiten und eine hohe Performance zu gewährleisten. Die Benutzeroberfläche ist modern und konsistent gestaltet, um meine Fähigkeiten, Projekte und beruflichen Erfahrungen optimal zu präsentieren.\nDie Seite ist sowohl technisch als auch semantisch für Suchmaschinen optimiert: Sie verwendet strukturierte Tags, dynamisch lokalisierte Metadaten (title, description, canonical, hreflang), unterstützt Twitter Cards und Open Graph für eine effektive Social-Media-Vorschau und bietet eine mehrsprachige Sitemap sowie eine benutzerdefinierte robots.txt. Sie erfüllt die Anforderungen von Googles Mobile-First-Indexierung und folgt den aktuellen Standards zur Barrierefreiheit."
     },
-    "fakeFootball": {
-      "title": "Teamverwaltung & Match-Streaming",
-      "description": "Diese App wurde mit Flutter entwickelt, um meine persönlichen Bedürfnisse bei der Verwaltung eines Fußballteams zu erfüllen, und ist sowohl für Mobilgeräte als auch für Desktop verfügbar. Sie bietet Funktionen wie Kaderverwaltung, individuelle Statistiken und Match-Streaming über OBS Studio, mit in Echtzeit generierten Overlays dank FFmpeg. Die App automatisiert auch die Erstellung von Highlight-Videos im Hoch- und Querformat für soziale Netzwerke. Ursprünglich für den Eigengebrauch entwickelt, verfolge ich nun das Ziel, sie als umfassendes Tool für Trainer, Spieler, Content Creator und andere Mannschaftssportarten zu kommerzialisieren."
-    },
-    "trivia": {
-      "title": "Trivia Escape",
-      "description": "Begib dich auf ein 2D-Trivia-Abenteuer im Weltraum! Steuere die Kugel durch komplexe Labyrinthe und beantworte die Fragen richtig, um den Ausgang zu erreichen. Das Spiel bietet zwei Modi: einen entspannten Modus ohne Zeitlimit und einen mit Zeitdruck für eine größere Herausforderung. Ziel ist es, das Projekt in eine Multiplayer-Version weiterzuentwickeln, um das Erlebnis noch spannender und wettbewerbsorientierter zu gestalten."
-    },
     "public": "öff.",
     "private": "privat"
   },

@@ -19,25 +19,6 @@ function Navbar() {
                 </div>
             </div>
             <div className="navbar-end">
-                <LanguageDropdown/>
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" aria-label="Open navigation menu" className="btn btn-ghost lg:hidden">
-                        <HamburgerMenu></HamburgerMenu>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                        <li><a aria-label={`${t('home')} section`} href={`#${HOME_SECTION}`}>{t('home')}</a></li>
-                        <li><a aria-label={`${t('experience')} section`}
-                               href={`#${EXPERIENCE_SECTION}`}>{t('experience')}</a></li>
-                        <li><a aria-label={`${t('knowledge')} section`} href={`#${SKILL_SECTION}`}>{t('knowledge')}</a>
-                        </li>
-                        <li><a aria-label={`${t('projects')} section`} href={`#${PROJECT_SECTION}`}>{t('projects')}</a>
-                        </li>
-                        <li><a aria-label={`${t('contact')} section`} href={`#${CONTACT_SECTION}`}>{t('contact')}</a>
-                        </li>
-                    </ul>
-                </div>
                 <div className="lg:flex hidden  flex-none ">
                     <ul className="menu menu-horizontal px-4">
                         <li><a aria-label={`${t('home')} section`} href={`#${HOME_SECTION}`}
