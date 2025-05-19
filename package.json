@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out"
+
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.10",
@@ -14,6 +17,7 @@
     "@tsparticles/slim": "^3.0.0",
     "@vercel/analytics": "^1.5.0",
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^6.3.0",
     "next": "15.2.3",
     "next-intl": "^4.0.2",
     "postcss": "^8.5.3",
